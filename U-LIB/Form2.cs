@@ -26,5 +26,29 @@ namespace U_LIB
         {
 
         }
+
+        private void submitbutton_Click(object sender, EventArgs e)
+        {
+            string username = emailtxtbox.Text;
+            string password = passtxtbox.Text;
+
+            if (username == "user" && password == "user")
+            {
+                // Jika username dan password benar, buka halaman home
+                header form1 = new header();
+                form1.Show();
+                this.Hide();
+            }
+            else
+            {
+                // Jika username atau password salah, tampilkan pesan kesalahan
+                MessageBox.Show("Username atau password salah. Silakan coba lagi.", "Kesalahan");
+            }
+        }
+
+        private void emailtxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

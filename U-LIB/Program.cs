@@ -16,7 +16,7 @@ namespace U_LIB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new header());
+            Application.Run(new loginForm());
         }
     }
 }

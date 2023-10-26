@@ -19,3 +19,14 @@ C:\Users\LENOVO\Documents\UNKLAB\2023\VISPRO\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.
 C:\Users\LENOVO\Documents\UNKLAB\2023\VISPRO\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\Documents\UNKLAB\2023\VISPRO\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.exe
 C:\Users\LENOVO\Documents\UNKLAB\2023\VISPRO\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.pdb
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.csproj.AssemblyReference.cache
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\obj\Debug\U_LIB.header.resources
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\obj\Debug\U_LIB.loginForm.resources
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\obj\Debug\U_LIB.Properties.Resources.resources
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.csproj.GenerateResource.cache
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.csproj.CoreCompileInputs.cache
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.exe
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.pdb
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\bin\Debug\U-LIB.exe.config
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\bin\Debug\U-LIB.exe
+C:\Users\Jacky K\Desktop\ULIB\ULIB-PROJECT\U-LIB\bin\Debug\U-LIB.pdb

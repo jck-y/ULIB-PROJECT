@@ -1,0 +1,12 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "managed",
+      "name": "Form2.Designer.cs",
+      "project": "U-LIB\\Form2.Designer.cs",
+      "projectTarget": ""
+    }
+  ]
+}

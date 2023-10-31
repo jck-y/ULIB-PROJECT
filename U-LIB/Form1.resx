@@ -277,16 +277,4 @@
         12xz4tdsp9ADmsgt8KpYqdETnzMve32ZAj6sinMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="about2.Text" xml:space="preserve">
-    <value>Selain itu, U-LIB memungkinkan Mahasiswa dalam melakukan pencarian
-buku secara efisien dengan adanya fitur pencarian. Aplikasi ini juga memungkinkan
-Mahasiswa melakukan peminjaman buku, perpanjangan durasi peminjaman, serta
-pengembalian buku dengan efisien.</value>
-  </data>
-  <data name="about1.Text" xml:space="preserve">
-    <value>U-LIB merupakan aplikasi perpustakaan milik Universitas Klabat.
-Aplikasi ini telah ada sejak 2023. U-LIB dibuat dengan tujuan untuk
-meningkatkan kemudahan pengguna (Mahasiswa) untuk mengakses
-koleksi perpustakaan kapan saja dan dimana saja.</value>
-  </data>
 </root>

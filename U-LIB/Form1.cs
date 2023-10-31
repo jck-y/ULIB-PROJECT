@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -42,55 +43,36 @@ namespace U_LIB
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        
 
-        private void pnlContent1_Paint(object sender, PaintEventArgs e)
+        private void header_Load(object sender, EventArgs e)
         {
 
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            btnHome.Height = btnHome.Height;
-            btnHome.Top = btnHome.Top;
-            pnlProfile.Visible = false;
-            pnlAbout.Visible = false;
+
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void btnBorrowing_Click(object sender, EventArgs e)
         {
 
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            btnProfile.Height = btnProfile.Height;
-            btnProfile.Top = btnProfile.Top;
-            pnlProfile.Visible = true;
-            pnlAbout.Visible = false;
-        }
 
-        private void btnAbout_Click(object sender, EventArgs e)
-        {
-            btnAbout.Height = btnProfile.Height;
-            btnAbout.Top = btnProfile.Top;
-            pnlProfile.Visible = false;
-            pnlAbout.Visible = true;
         }
 
         private void btnCategory_Click(object sender, EventArgs e)
         {
-            btnCategory.Height = btnCategory.Height;
-            btnCategory.Top = btnCategory.Top;
-            pnlProfile.Visible = false;
-            pnlAbout.Visible = false;
+
         }
 
-        private void btnBorrow_Click(object sender, EventArgs e)
+        private void btnAbout_Click(object sender, EventArgs e)
         {
-            btnBorrow.Height = btnBorrow.Height;
-            btnBorrow.Top = btnBorrow.Top;
-            pnlProfile.Visible = false;
-            pnlAbout.Visible = false;
+
         }
     }
 }

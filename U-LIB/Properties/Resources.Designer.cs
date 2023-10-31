@@ -69,5 +69,15 @@ namespace U_LIB.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_picture_user_icon_153847 {
+            get {
+                object obj = ResourceManager.GetObject("profile_picture_user_icon_153847", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

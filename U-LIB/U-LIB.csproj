@@ -92,5 +92,8 @@
   <ItemGroup>
     <None Include="Resources\LOGO_UNIVERSITAS_KLABAT.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_picture_user_icon_153847.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

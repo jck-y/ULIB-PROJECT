@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -42,13 +43,34 @@ namespace U_LIB
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        
 
-        private void pnlContent1_Paint(object sender, PaintEventArgs e)
+        private void header_Load(object sender, EventArgs e)
         {
 
         }
 
         private void btnHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBorrowing_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
         {
 
         }

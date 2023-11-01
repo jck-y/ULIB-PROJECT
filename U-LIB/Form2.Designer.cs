@@ -84,6 +84,7 @@
             this.cancelbutton.TabIndex = 6;
             this.cancelbutton.Text = "cancel";
             this.cancelbutton.UseVisualStyleBackColor = true;
+            this.cancelbutton.Click += new System.EventHandler(this.cancelbutton_Click_1);
             // 
             // passcekbox
             // 
@@ -126,6 +127,7 @@
             this.passtxtbox.Name = "passtxtbox";
             this.passtxtbox.Size = new System.Drawing.Size(271, 26);
             this.passtxtbox.TabIndex = 2;
+            this.passtxtbox.TextChanged += new System.EventHandler(this.passtxtbox_TextChanged_1);
             // 
             // emailtxtbox
             // 

@@ -32,6 +32,14 @@ namespace U_LIB
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(header));
             this.pnlLeft = new System.Windows.Forms.Panel();
+            this.pnlOnBtnAbout = new System.Windows.Forms.Panel();
+            this.btnAbout = new System.Windows.Forms.Button();
+            this.pnlOnBtnBorrowing = new System.Windows.Forms.Panel();
+            this.btnBorrowing = new System.Windows.Forms.Button();
+            this.pnlOnBtnProfile = new System.Windows.Forms.Panel();
+            this.btnProfile = new System.Windows.Forms.Button();
+            this.pnlOnBtnCategory = new System.Windows.Forms.Panel();
+            this.btnCategory = new System.Windows.Forms.Button();
             this.pnlOnBtnHome = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
             this.pnlTop = new System.Windows.Forms.Panel();
@@ -39,23 +47,34 @@ namespace U_LIB
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
-            this.pnlOnBtnCategory = new System.Windows.Forms.Panel();
-            this.btnCategory = new System.Windows.Forms.Button();
-            this.pnlOnBtnProfile = new System.Windows.Forms.Panel();
-            this.btnProfile = new System.Windows.Forms.Button();
-            this.pnlOnBtnBorrowing = new System.Windows.Forms.Panel();
-            this.btnBorrowing = new System.Windows.Forms.Button();
-            this.pnlOnBtnAbout = new System.Windows.Forms.Panel();
-            this.btnAbout = new System.Windows.Forms.Button();
+            this.pnlLogout = new System.Windows.Forms.Panel();
+            this.pnlOnBtnLogout = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.pnlHome = new System.Windows.Forms.Panel();
+            this.pnlProfile = new System.Windows.Forms.Panel();
+            this.profilePic = new System.Windows.Forms.PictureBox();
+            this.pnlCategory = new System.Windows.Forms.Panel();
+            this.pnlBorrowing = new System.Windows.Forms.Panel();
+            this.pnlAbout = new System.Windows.Forms.Panel();
+            this.txtAbout = new System.Windows.Forms.Label();
+            this.ukLogo = new System.Windows.Forms.PictureBox();
+            this.txtuLib = new System.Windows.Forms.Label();
             this.pnlLeft.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.pnlBtnTop.SuspendLayout();
+            this.pnlLogout.SuspendLayout();
+            this.pnlProfile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.profilePic)).BeginInit();
+            this.pnlAbout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ukLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeft
             // 
             this.pnlLeft.BackColor = System.Drawing.Color.DarkMagenta;
             this.pnlLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlLeft.Controls.Add(this.ukLogo);
+            this.pnlLeft.Controls.Add(this.pnlLogout);
             this.pnlLeft.Controls.Add(this.pnlOnBtnAbout);
             this.pnlLeft.Controls.Add(this.btnAbout);
             this.pnlLeft.Controls.Add(this.pnlOnBtnBorrowing);
@@ -73,10 +92,99 @@ namespace U_LIB
             this.pnlLeft.Size = new System.Drawing.Size(133, 370);
             this.pnlLeft.TabIndex = 0;
             // 
+            // pnlOnBtnAbout
+            // 
+            this.pnlOnBtnAbout.BackColor = System.Drawing.Color.Yellow;
+            this.pnlOnBtnAbout.Location = new System.Drawing.Point(-3, 211);
+            this.pnlOnBtnAbout.Name = "pnlOnBtnAbout";
+            this.pnlOnBtnAbout.Size = new System.Drawing.Size(10, 31);
+            this.pnlOnBtnAbout.TabIndex = 10;
+            this.pnlOnBtnAbout.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlOnBtnAbout_Paint);
+            // 
+            // btnAbout
+            // 
+            this.btnAbout.FlatAppearance.BorderSize = 0;
+            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbout.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbout.ForeColor = System.Drawing.Color.White;
+            this.btnAbout.Location = new System.Drawing.Point(0, 211);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(133, 31);
+            this.btnAbout.TabIndex = 9;
+            this.btnAbout.Text = "About";
+            this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            // 
+            // pnlOnBtnBorrowing
+            // 
+            this.pnlOnBtnBorrowing.BackColor = System.Drawing.Color.Yellow;
+            this.pnlOnBtnBorrowing.Location = new System.Drawing.Point(-3, 172);
+            this.pnlOnBtnBorrowing.Name = "pnlOnBtnBorrowing";
+            this.pnlOnBtnBorrowing.Size = new System.Drawing.Size(10, 31);
+            this.pnlOnBtnBorrowing.TabIndex = 8;
+            // 
+            // btnBorrowing
+            // 
+            this.btnBorrowing.FlatAppearance.BorderSize = 0;
+            this.btnBorrowing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrowing.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrowing.ForeColor = System.Drawing.Color.White;
+            this.btnBorrowing.Location = new System.Drawing.Point(0, 172);
+            this.btnBorrowing.Name = "btnBorrowing";
+            this.btnBorrowing.Size = new System.Drawing.Size(133, 31);
+            this.btnBorrowing.TabIndex = 7;
+            this.btnBorrowing.Text = "Borrowing";
+            this.btnBorrowing.UseVisualStyleBackColor = true;
+            this.btnBorrowing.Click += new System.EventHandler(this.btnBorrowing_Click);
+            // 
+            // pnlOnBtnProfile
+            // 
+            this.pnlOnBtnProfile.BackColor = System.Drawing.Color.Yellow;
+            this.pnlOnBtnProfile.Location = new System.Drawing.Point(-3, 92);
+            this.pnlOnBtnProfile.Name = "pnlOnBtnProfile";
+            this.pnlOnBtnProfile.Size = new System.Drawing.Size(10, 31);
+            this.pnlOnBtnProfile.TabIndex = 6;
+            // 
+            // btnProfile
+            // 
+            this.btnProfile.FlatAppearance.BorderSize = 0;
+            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfile.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.ForeColor = System.Drawing.Color.White;
+            this.btnProfile.Location = new System.Drawing.Point(0, 92);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(133, 31);
+            this.btnProfile.TabIndex = 5;
+            this.btnProfile.Text = "Profile";
+            this.btnProfile.UseVisualStyleBackColor = true;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            // 
+            // pnlOnBtnCategory
+            // 
+            this.pnlOnBtnCategory.BackColor = System.Drawing.Color.Yellow;
+            this.pnlOnBtnCategory.Location = new System.Drawing.Point(-3, 132);
+            this.pnlOnBtnCategory.Name = "pnlOnBtnCategory";
+            this.pnlOnBtnCategory.Size = new System.Drawing.Size(10, 31);
+            this.pnlOnBtnCategory.TabIndex = 4;
+            // 
+            // btnCategory
+            // 
+            this.btnCategory.FlatAppearance.BorderSize = 0;
+            this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategory.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategory.ForeColor = System.Drawing.Color.White;
+            this.btnCategory.Location = new System.Drawing.Point(0, 132);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(133, 31);
+            this.btnCategory.TabIndex = 3;
+            this.btnCategory.Text = "Category";
+            this.btnCategory.UseVisualStyleBackColor = true;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
+            // 
             // pnlOnBtnHome
             // 
             this.pnlOnBtnHome.BackColor = System.Drawing.Color.Yellow;
-            this.pnlOnBtnHome.Location = new System.Drawing.Point(-3, 46);
+            this.pnlOnBtnHome.Location = new System.Drawing.Point(-3, 53);
             this.pnlOnBtnHome.Name = "pnlOnBtnHome";
             this.pnlOnBtnHome.Size = new System.Drawing.Size(10, 31);
             this.pnlOnBtnHome.TabIndex = 2;
@@ -87,7 +195,7 @@ namespace U_LIB
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(0, 46);
+            this.btnHome.Location = new System.Drawing.Point(0, 53);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(133, 31);
             this.btnHome.TabIndex = 0;
@@ -99,6 +207,7 @@ namespace U_LIB
             // 
             this.pnlTop.BackColor = System.Drawing.Color.Yellow;
             this.pnlTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTop.Controls.Add(this.txtuLib);
             this.pnlTop.Controls.Add(this.pnlBtnTop);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(133, 0);
@@ -161,99 +270,126 @@ namespace U_LIB
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // pnlOnBtnCategory
+            // pnlLogout
             // 
-            this.pnlOnBtnCategory.BackColor = System.Drawing.Color.Yellow;
-            this.pnlOnBtnCategory.Location = new System.Drawing.Point(-3, 129);
-            this.pnlOnBtnCategory.Name = "pnlOnBtnCategory";
-            this.pnlOnBtnCategory.Size = new System.Drawing.Size(10, 31);
-            this.pnlOnBtnCategory.TabIndex = 4;
+            this.pnlLogout.BackColor = System.Drawing.Color.Yellow;
+            this.pnlLogout.Controls.Add(this.pnlOnBtnLogout);
+            this.pnlLogout.Controls.Add(this.btnLogout);
+            this.pnlLogout.Location = new System.Drawing.Point(0, 321);
+            this.pnlLogout.Name = "pnlLogout";
+            this.pnlLogout.Size = new System.Drawing.Size(133, 48);
+            this.pnlLogout.TabIndex = 2;
             // 
-            // btnCategory
+            // pnlOnBtnLogout
             // 
-            this.btnCategory.FlatAppearance.BorderSize = 0;
-            this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategory.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategory.ForeColor = System.Drawing.Color.White;
-            this.btnCategory.Location = new System.Drawing.Point(0, 129);
-            this.btnCategory.Name = "btnCategory";
-            this.btnCategory.Size = new System.Drawing.Size(133, 31);
-            this.btnCategory.TabIndex = 3;
-            this.btnCategory.Text = "Category";
-            this.btnCategory.UseVisualStyleBackColor = true;
-            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
+            this.pnlOnBtnLogout.BackColor = System.Drawing.Color.Black;
+            this.pnlOnBtnLogout.Location = new System.Drawing.Point(-4, 9);
+            this.pnlOnBtnLogout.Name = "pnlOnBtnLogout";
+            this.pnlOnBtnLogout.Size = new System.Drawing.Size(10, 31);
+            this.pnlOnBtnLogout.TabIndex = 12;
             // 
-            // pnlOnBtnProfile
+            // btnLogout
             // 
-            this.pnlOnBtnProfile.BackColor = System.Drawing.Color.Yellow;
-            this.pnlOnBtnProfile.Location = new System.Drawing.Point(-3, 87);
-            this.pnlOnBtnProfile.Name = "pnlOnBtnProfile";
-            this.pnlOnBtnProfile.Size = new System.Drawing.Size(10, 31);
-            this.pnlOnBtnProfile.TabIndex = 6;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.Black;
+            this.btnLogout.Location = new System.Drawing.Point(-1, 9);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(133, 31);
+            this.btnLogout.TabIndex = 11;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
             // 
-            // btnProfile
+            // pnlHome
             // 
-            this.btnProfile.FlatAppearance.BorderSize = 0;
-            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfile.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProfile.ForeColor = System.Drawing.Color.White;
-            this.btnProfile.Location = new System.Drawing.Point(0, 87);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(133, 31);
-            this.btnProfile.TabIndex = 5;
-            this.btnProfile.Text = "Profile";
-            this.btnProfile.UseVisualStyleBackColor = true;
-            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            this.pnlHome.Location = new System.Drawing.Point(133, 47);
+            this.pnlHome.Name = "pnlHome";
+            this.pnlHome.Size = new System.Drawing.Size(561, 323);
+            this.pnlHome.TabIndex = 2;
             // 
-            // pnlOnBtnBorrowing
+            // pnlProfile
             // 
-            this.pnlOnBtnBorrowing.BackColor = System.Drawing.Color.Yellow;
-            this.pnlOnBtnBorrowing.Location = new System.Drawing.Point(-3, 170);
-            this.pnlOnBtnBorrowing.Name = "pnlOnBtnBorrowing";
-            this.pnlOnBtnBorrowing.Size = new System.Drawing.Size(10, 31);
-            this.pnlOnBtnBorrowing.TabIndex = 8;
+            this.pnlProfile.Controls.Add(this.profilePic);
+            this.pnlProfile.Location = new System.Drawing.Point(134, 47);
+            this.pnlProfile.Name = "pnlProfile";
+            this.pnlProfile.Size = new System.Drawing.Size(561, 323);
+            this.pnlProfile.TabIndex = 3;
             // 
-            // btnBorrowing
+            // profilePic
             // 
-            this.btnBorrowing.FlatAppearance.BorderSize = 0;
-            this.btnBorrowing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBorrowing.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrowing.ForeColor = System.Drawing.Color.White;
-            this.btnBorrowing.Location = new System.Drawing.Point(0, 170);
-            this.btnBorrowing.Name = "btnBorrowing";
-            this.btnBorrowing.Size = new System.Drawing.Size(133, 31);
-            this.btnBorrowing.TabIndex = 7;
-            this.btnBorrowing.Text = "Borrowing";
-            this.btnBorrowing.UseVisualStyleBackColor = true;
-            this.btnBorrowing.Click += new System.EventHandler(this.btnBorrowing_Click);
+            this.profilePic.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.profilePic.Image = global::U_LIB.Properties.Resources.profile_picture_user_icon_153847;
+            this.profilePic.Location = new System.Drawing.Point(13, 11);
+            this.profilePic.Name = "profilePic";
+            this.profilePic.Size = new System.Drawing.Size(113, 128);
+            this.profilePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.profilePic.TabIndex = 0;
+            this.profilePic.TabStop = false;
             // 
-            // pnlOnBtnAbout
+            // pnlCategory
             // 
-            this.pnlOnBtnAbout.BackColor = System.Drawing.Color.Yellow;
-            this.pnlOnBtnAbout.Location = new System.Drawing.Point(-3, 210);
-            this.pnlOnBtnAbout.Name = "pnlOnBtnAbout";
-            this.pnlOnBtnAbout.Size = new System.Drawing.Size(10, 31);
-            this.pnlOnBtnAbout.TabIndex = 10;
+            this.pnlCategory.Location = new System.Drawing.Point(134, 44);
+            this.pnlCategory.Name = "pnlCategory";
+            this.pnlCategory.Size = new System.Drawing.Size(561, 323);
+            this.pnlCategory.TabIndex = 4;
             // 
-            // btnAbout
+            // pnlBorrowing
             // 
-            this.btnAbout.FlatAppearance.BorderSize = 0;
-            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbout.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbout.ForeColor = System.Drawing.Color.White;
-            this.btnAbout.Location = new System.Drawing.Point(0, 210);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(133, 31);
-            this.btnAbout.TabIndex = 9;
-            this.btnAbout.Text = "About";
-            this.btnAbout.UseVisualStyleBackColor = true;
-            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            this.pnlBorrowing.Location = new System.Drawing.Point(133, 47);
+            this.pnlBorrowing.Name = "pnlBorrowing";
+            this.pnlBorrowing.Size = new System.Drawing.Size(561, 323);
+            this.pnlBorrowing.TabIndex = 5;
+            // 
+            // pnlAbout
+            // 
+            this.pnlAbout.Controls.Add(this.txtAbout);
+            this.pnlAbout.Location = new System.Drawing.Point(133, 44);
+            this.pnlAbout.Name = "pnlAbout";
+            this.pnlAbout.Size = new System.Drawing.Size(561, 323);
+            this.pnlAbout.TabIndex = 6;
+            this.pnlAbout.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAbout_Paint);
+            // 
+            // txtAbout
+            // 
+            this.txtAbout.AutoSize = true;
+            this.txtAbout.Font = new System.Drawing.Font("Bebas Neue", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAbout.Location = new System.Drawing.Point(226, 38);
+            this.txtAbout.Name = "txtAbout";
+            this.txtAbout.Size = new System.Drawing.Size(105, 29);
+            this.txtAbout.TabIndex = 0;
+            this.txtAbout.Text = "About U-LIB";
+            // 
+            // ukLogo
+            // 
+            this.ukLogo.Image = global::U_LIB.Properties.Resources.LOGO_UNIVERSITAS_KLABAT;
+            this.ukLogo.Location = new System.Drawing.Point(38, 4);
+            this.ukLogo.Name = "ukLogo";
+            this.ukLogo.Size = new System.Drawing.Size(49, 39);
+            this.ukLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ukLogo.TabIndex = 11;
+            this.ukLogo.TabStop = false;
+            // 
+            // txtuLib
+            // 
+            this.txtuLib.AutoSize = true;
+            this.txtuLib.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuLib.Location = new System.Drawing.Point(8, 8);
+            this.txtuLib.Name = "txtuLib";
+            this.txtuLib.Size = new System.Drawing.Size(74, 29);
+            this.txtuLib.TabIndex = 1;
+            this.txtuLib.Text = "U-LIB";
             // 
             // header
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 370);
+            this.Controls.Add(this.pnlAbout);
+            this.Controls.Add(this.pnlBorrowing);
+            this.Controls.Add(this.pnlCategory);
+            this.Controls.Add(this.pnlProfile);
+            this.Controls.Add(this.pnlHome);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -264,7 +400,14 @@ namespace U_LIB
             this.Load += new System.EventHandler(this.header_Load);
             this.pnlLeft.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);
+            this.pnlTop.PerformLayout();
             this.pnlBtnTop.ResumeLayout(false);
+            this.pnlLogout.ResumeLayout(false);
+            this.pnlProfile.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.profilePic)).EndInit();
+            this.pnlAbout.ResumeLayout(false);
+            this.pnlAbout.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ukLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,6 +435,18 @@ namespace U_LIB
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Panel pnlOnBtnAbout;
         private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Panel pnlLogout;
+        private System.Windows.Forms.Panel pnlOnBtnLogout;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Panel pnlHome;
+        private System.Windows.Forms.Panel pnlProfile;
+        private System.Windows.Forms.PictureBox profilePic;
+        private System.Windows.Forms.Panel pnlCategory;
+        private System.Windows.Forms.Panel pnlBorrowing;
+        private System.Windows.Forms.Panel pnlAbout;
+        private System.Windows.Forms.Label txtAbout;
+        private System.Windows.Forms.PictureBox ukLogo;
+        private System.Windows.Forms.Label txtuLib;
     }
 }
 

@@ -277,4 +277,18 @@
         12xz4tdsp9ADmsgt8KpYqdETnzMve32ZAj6sinMAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>1. Batas waktu peminjaman buku adalah 1 minggu, khusus buku 'White', 2 hari
+2. Terlambat mengembalikan buku atau lewat dari tanggal pengembalian yang ditetapkan,
+dikenakan denda Rp.7.500/Hari
+3. Batas buku yang dapat dipinjam adalah 3 buku
+4. Jika buku yang dipinjam hilang atau rusak, akan dikenakan denda sesuai harga buku saat ini
+5. Thesis, jurnal, skripsi, majalah dan koran tidak bisa dipinjam</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>U-LIB adalah aplikasi perpustakaan milik Universitas Klabat.
+Aplikasi ini dibuat adalah untuk mempermudah pengguna, dalam hal ini Mahasiswa,
+untuk melakukan peminjaman, pengembalian, serta melihat daftar buku dengan 
+cepat dan efisien tanpa harus mengunjungi perpustakaan fisik kampus.</value>
+  </data>
 </root>

@@ -98,5 +98,29 @@
   <ItemGroup>
     <None Include="Resources\profile_picture_user_icon_153847.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon-256-915059353.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recommend books ikon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book of philosophy icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book of technology icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\general books icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

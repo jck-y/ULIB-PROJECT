@@ -37,7 +37,6 @@
             this.passtxtbox = new System.Windows.Forms.TextBox();
             this.emailtxtbox = new System.Windows.Forms.TextBox();
             this.loginsubpanel = new System.Windows.Forms.Panel();
-            this.studentlogintxt = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.unklabloginpict = new System.Windows.Forms.PictureBox();
             this.welcometxt = new System.Windows.Forms.Label();
@@ -66,10 +65,10 @@
             // 
             // submitbutton
             // 
-            this.submitbutton.Location = new System.Drawing.Point(435, 431);
+            this.submitbutton.Location = new System.Drawing.Point(435, 420);
             this.submitbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.submitbutton.Name = "submitbutton";
-            this.submitbutton.Size = new System.Drawing.Size(124, 43);
+            this.submitbutton.Size = new System.Drawing.Size(124, 63);
             this.submitbutton.TabIndex = 7;
             this.submitbutton.Text = "submit";
             this.submitbutton.UseVisualStyleBackColor = true;
@@ -77,10 +76,10 @@
             // 
             // cancelbutton
             // 
-            this.cancelbutton.Location = new System.Drawing.Point(302, 431);
+            this.cancelbutton.Location = new System.Drawing.Point(302, 420);
             this.cancelbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cancelbutton.Name = "cancelbutton";
-            this.cancelbutton.Size = new System.Drawing.Size(124, 43);
+            this.cancelbutton.Size = new System.Drawing.Size(124, 63);
             this.cancelbutton.TabIndex = 6;
             this.cancelbutton.Text = "cancel";
             this.cancelbutton.UseVisualStyleBackColor = true;
@@ -89,7 +88,7 @@
             // passcekbox
             // 
             this.passcekbox.AutoSize = true;
-            this.passcekbox.Location = new System.Drawing.Point(207, 338);
+            this.passcekbox.Location = new System.Drawing.Point(207, 318);
             this.passcekbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.passcekbox.Name = "passcekbox";
             this.passcekbox.Size = new System.Drawing.Size(137, 24);
@@ -102,7 +101,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 288);
+            this.label1.Location = new System.Drawing.Point(80, 268);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 25);
@@ -113,16 +112,16 @@
             // 
             this.emailtxt.AutoSize = true;
             this.emailtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailtxt.Location = new System.Drawing.Point(82, 211);
+            this.emailtxt.Location = new System.Drawing.Point(82, 191);
             this.emailtxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emailtxt.Name = "emailtxt";
-            this.emailtxt.Size = new System.Drawing.Size(60, 25);
+            this.emailtxt.Size = new System.Drawing.Size(77, 25);
             this.emailtxt.TabIndex = 3;
-            this.emailtxt.Text = "Email";
+            this.emailtxt.Text = "User ID";
             // 
             // passtxtbox
             // 
-            this.passtxtbox.Location = new System.Drawing.Point(207, 285);
+            this.passtxtbox.Location = new System.Drawing.Point(207, 265);
             this.passtxtbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.passtxtbox.Name = "passtxtbox";
             this.passtxtbox.Size = new System.Drawing.Size(271, 26);
@@ -131,7 +130,7 @@
             // 
             // emailtxtbox
             // 
-            this.emailtxtbox.Location = new System.Drawing.Point(206, 209);
+            this.emailtxtbox.Location = new System.Drawing.Point(206, 189);
             this.emailtxtbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.emailtxtbox.Name = "emailtxtbox";
             this.emailtxtbox.Size = new System.Drawing.Size(271, 26);
@@ -142,7 +141,6 @@
             // 
             this.loginsubpanel.BackColor = System.Drawing.Color.Yellow;
             this.loginsubpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.loginsubpanel.Controls.Add(this.studentlogintxt);
             this.loginsubpanel.Controls.Add(this.label2);
             this.loginsubpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.loginsubpanel.Location = new System.Drawing.Point(0, 0);
@@ -151,24 +149,12 @@
             this.loginsubpanel.Size = new System.Drawing.Size(638, 84);
             this.loginsubpanel.TabIndex = 0;
             // 
-            // studentlogintxt
-            // 
-            this.studentlogintxt.AutoSize = true;
-            this.studentlogintxt.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentlogintxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.studentlogintxt.Location = new System.Drawing.Point(243, 55);
-            this.studentlogintxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.studentlogintxt.Name = "studentlogintxt";
-            this.studentlogintxt.Size = new System.Drawing.Size(145, 23);
-            this.studentlogintxt.TabIndex = 5;
-            this.studentlogintxt.Text = "Login as Student";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.label2.Location = new System.Drawing.Point(206, 3);
+            this.label2.Location = new System.Drawing.Point(206, 15);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(232, 48);
@@ -214,6 +200,7 @@
             this.Name = "loginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
+            this.Load += new System.EventHandler(this.loginForm_Load);
             this.loginpanel.ResumeLayout(false);
             this.loginpanel.PerformLayout();
             this.loginsubpanel.ResumeLayout(false);
@@ -235,7 +222,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label emailtxt;
         private System.Windows.Forms.CheckBox passcekbox;
-        private System.Windows.Forms.Label studentlogintxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button submitbutton;
         private System.Windows.Forms.Button cancelbutton;

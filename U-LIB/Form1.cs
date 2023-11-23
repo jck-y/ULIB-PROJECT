@@ -8,6 +8,8 @@ using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace U_LIB
 {
@@ -16,6 +18,15 @@ namespace U_LIB
         public header()
         {
             InitializeComponent();
+
+        }
+
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            ucpanel.Controls.Clear();
+            ucpanel.Controls.Add(userControl);
+            userControl.BringToFront();
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
@@ -50,59 +61,29 @@ namespace U_LIB
 
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            pnlOnBtnHome.Height = btnHome.Height;
-            pnlOnBtnHome.Top = btnHome.Top;
-            pnlHome.Visible = true;
-            pnlProfile.Visible = false;
-            pnlCategory.Visible = false;
-            pnlBorrowing.Visible = false;
-            pnlAbout.Visible = false;
-        }
 
         private void btnBorrowing_Click(object sender, EventArgs e)
         {
-            pnlOnBtnBorrowing.Height = btnBorrowing.Height;
-            pnlOnBtnBorrowing.Top = btnBorrowing.Top;
-            pnlHome.Visible = false;
-            pnlProfile.Visible = false;
-            pnlCategory.Visible = false;
-            pnlBorrowing.Visible = true;
-            pnlAbout.Visible = false;
+            borrowingctrl uc = new borrowingctrl();
+            addUserControl(uc);
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            pnlOnBtnProfile.Height = btnProfile.Height;
-            pnlOnBtnProfile.Top = btnProfile.Top;
-            pnlHome.Visible = false;
-            pnlProfile.Visible = true;
-            pnlCategory.Visible = false;
-            pnlBorrowing.Visible = false;
-            pnlAbout.Visible = false;
-        }
-
-        private void btnCategory_Click(object sender, EventArgs e)
-        {
-            pnlOnBtnCategory.Height = btnCategory.Height;
-            pnlOnBtnCategory.Top = btnCategory.Top;
-            pnlHome.Visible = false;
-            pnlProfile.Visible = false;
-            pnlCategory.Visible = true;
-            pnlBorrowing.Visible = false;
-            pnlAbout.Visible = false;
+            profilectrl uc = new profilectrl();
+            addUserControl(uc);
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
-            pnlOnBtnAbout.Height = btnAbout.Height;
-            pnlOnBtnAbout.Top = btnAbout.Top;
-            pnlHome.Visible = false;
-            pnlProfile.Visible = false;
-            pnlCategory.Visible = false;
-            pnlBorrowing.Visible = false;
-            pnlAbout.Visible = true;
+            aboutctrl uc = new aboutctrl();
+            addUserControl(uc);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            catalogctrl uc = new catalogctrl();
+            addUserControl(uc);
         }
 
         private void pnlOnBtnAbout_Paint(object sender, PaintEventArgs e)
@@ -117,7 +98,7 @@ namespace U_LIB
 
         private void pnlProfile_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void label17_Click(object sender, EventArgs e)
@@ -133,6 +114,43 @@ namespace U_LIB
         private void label22_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void recomendation_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void recomendation_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ucpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlLeft_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlTop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            loginForm loginform = new loginForm();
+            loginform.Show();
+            this.Hide();
         }
     }
 }

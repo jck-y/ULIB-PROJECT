@@ -70,7 +70,7 @@
             this.submitbutton.Name = "submitbutton";
             this.submitbutton.Size = new System.Drawing.Size(124, 63);
             this.submitbutton.TabIndex = 7;
-            this.submitbutton.Text = "submit";
+            this.submitbutton.Text = "Submit";
             this.submitbutton.UseVisualStyleBackColor = true;
             this.submitbutton.Click += new System.EventHandler(this.submitbutton_Click);
             // 
@@ -81,7 +81,7 @@
             this.cancelbutton.Name = "cancelbutton";
             this.cancelbutton.Size = new System.Drawing.Size(124, 63);
             this.cancelbutton.TabIndex = 6;
-            this.cancelbutton.Text = "cancel";
+            this.cancelbutton.Text = "Close";
             this.cancelbutton.UseVisualStyleBackColor = true;
             this.cancelbutton.Click += new System.EventHandler(this.cancelbutton_Click_1);
             // 
@@ -115,9 +115,9 @@
             this.emailtxt.Location = new System.Drawing.Point(82, 191);
             this.emailtxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emailtxt.Name = "emailtxt";
-            this.emailtxt.Size = new System.Drawing.Size(77, 25);
+            this.emailtxt.Size = new System.Drawing.Size(31, 25);
             this.emailtxt.TabIndex = 3;
-            this.emailtxt.Text = "User ID";
+            this.emailtxt.Text = "ID";
             // 
             // passtxtbox
             // 

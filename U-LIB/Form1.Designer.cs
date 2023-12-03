@@ -53,6 +53,8 @@ namespace U_LIB
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.ucpanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlLeft.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ukLogo)).BeginInit();
@@ -60,6 +62,7 @@ namespace U_LIB
             this.pnlOnBtnAbout.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.pnlBtnTop.SuspendLayout();
+            this.ucpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlLeft
@@ -205,7 +208,7 @@ namespace U_LIB
             this.btnBorrowing.ForeColor = System.Drawing.Color.White;
             this.btnBorrowing.Location = new System.Drawing.Point(0, 116);
             this.btnBorrowing.Name = "btnBorrowing";
-            this.btnBorrowing.Size = new System.Drawing.Size(133, 31);
+            this.btnBorrowing.Size = new System.Drawing.Size(133, 34);
             this.btnBorrowing.TabIndex = 7;
             this.btnBorrowing.Text = "Borrowing";
             this.btnBorrowing.UseVisualStyleBackColor = true;
@@ -313,12 +316,34 @@ namespace U_LIB
             // 
             // ucpanel
             // 
+            this.ucpanel.Controls.Add(this.label2);
+            this.ucpanel.Controls.Add(this.label1);
             this.ucpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucpanel.Location = new System.Drawing.Point(133, 43);
             this.ucpanel.Name = "ucpanel";
             this.ucpanel.Size = new System.Drawing.Size(562, 327);
             this.ucpanel.TabIndex = 2;
             this.ucpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ucpanel_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(67, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(427, 74);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "You have successfully logged in!\r\n\r\n";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12.25F);
+            this.label2.Location = new System.Drawing.Point(92, 149);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(372, 23);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Please arrange the borrowing of student books.";
             // 
             // header
             // 
@@ -342,6 +367,8 @@ namespace U_LIB
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
             this.pnlBtnTop.ResumeLayout(false);
+            this.ucpanel.ResumeLayout(false);
+            this.ucpanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -375,6 +402,8 @@ namespace U_LIB
         private System.Windows.Forms.Button catalogbtn;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel ucpanel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

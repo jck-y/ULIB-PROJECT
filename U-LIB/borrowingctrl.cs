@@ -42,17 +42,17 @@ namespace U_LIB
 
                 databorrowing.DataSource = ds.Tables[0];
                 databorrowing.Columns[0].Width = 80;
-                databorrowing.Columns[0].HeaderText = "NIM";
+                databorrowing.Columns[0].HeaderText = "ID peminjaman";
                 databorrowing.Columns[1].Width = 150;
-                databorrowing.Columns[1].HeaderText = "Nama";
+                databorrowing.Columns[1].HeaderText = "ID Buku";
                 databorrowing.Columns[2].Width = 195;
-                databorrowing.Columns[2].HeaderText = "Email";
+                databorrowing.Columns[2].HeaderText = "tgl pinjam";
                 databorrowing.Columns[3].Width = 150;
-                databorrowing.Columns[3].HeaderText = "Fakultas";
+                databorrowing.Columns[3].HeaderText = "tgl_kembali";
                 databorrowing.Columns[4].Width = 195;
-                databorrowing.Columns[4].HeaderText = "Email";
+                databorrowing.Columns[4].HeaderText = "NIM";
                 databorrowing.Columns[5].Width = 150;
-                databorrowing.Columns[5].HeaderText = "Fakultas";
+                databorrowing.Columns[5].HeaderText = "jumlah";
             }
             catch (Exception ex)
             {
@@ -73,7 +73,7 @@ namespace U_LIB
 
         private void idpinjamtxtbox_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Save_Click(object sender, EventArgs e)
@@ -122,6 +122,45 @@ namespace U_LIB
         private void jumlahtxtbox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void searchtbn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                koneksi.Open();
+                query = string.Format("SELECT * FROM peminjaman WHERE id_pinjam = @idpinjam");
+                perintah = new MySqlCommand(query, koneksi);
+                perintah.Parameters.AddWithValue("@idpinjam", idpinjamtxtbox.Text);
+                adapter = new MySqlDataAdapter(perintah);
+                ds.Clear();
+                adapter.Fill(ds);
+
+                koneksi.Close();
+
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    DataRow kolom = ds.Tables[0].Rows[0];
+                    {
+                        idpinjamtxtbox.Text = kolom["id_pinjam"].ToString();
+                        idpinjamtxtbox.Text = kolom["id_buku"].ToString();
+                        idpinjamtxtbox.Text = kolom["tgl_pinjam"].ToString();
+                        idpinjamtxtbox.Text = kolom["student_nim"].ToString();
+                        idpinjamtxtbox.Text = kolom["jumlah_buku"].ToString();
+
+                        delbtn.Enabled = true;
+                    }
+                }
+                else
+                {
+                    // Tidak ada hasil ditemukan, mungkin tampilkan pesan ke pengguna
+                    MessageBox.Show("Buku tidak ditemukan.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

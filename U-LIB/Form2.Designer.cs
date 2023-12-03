@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
             this.loginpanel = new System.Windows.Forms.Panel();
             this.submitbutton = new System.Windows.Forms.Button();
             this.cancelbutton = new System.Windows.Forms.Button();
@@ -57,18 +58,16 @@
             this.loginpanel.Controls.Add(this.passtxtbox);
             this.loginpanel.Controls.Add(this.emailtxtbox);
             this.loginpanel.Controls.Add(this.loginsubpanel);
-            this.loginpanel.Location = new System.Drawing.Point(267, 106);
-            this.loginpanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.loginpanel.Location = new System.Drawing.Point(178, 69);
             this.loginpanel.Name = "loginpanel";
-            this.loginpanel.Size = new System.Drawing.Size(640, 531);
+            this.loginpanel.Size = new System.Drawing.Size(427, 346);
             this.loginpanel.TabIndex = 0;
             // 
             // submitbutton
             // 
-            this.submitbutton.Location = new System.Drawing.Point(435, 420);
-            this.submitbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.submitbutton.Location = new System.Drawing.Point(290, 273);
             this.submitbutton.Name = "submitbutton";
-            this.submitbutton.Size = new System.Drawing.Size(124, 63);
+            this.submitbutton.Size = new System.Drawing.Size(83, 41);
             this.submitbutton.TabIndex = 7;
             this.submitbutton.Text = "submit";
             this.submitbutton.UseVisualStyleBackColor = true;
@@ -76,10 +75,9 @@
             // 
             // cancelbutton
             // 
-            this.cancelbutton.Location = new System.Drawing.Point(302, 420);
-            this.cancelbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cancelbutton.Location = new System.Drawing.Point(201, 273);
             this.cancelbutton.Name = "cancelbutton";
-            this.cancelbutton.Size = new System.Drawing.Size(124, 63);
+            this.cancelbutton.Size = new System.Drawing.Size(83, 41);
             this.cancelbutton.TabIndex = 6;
             this.cancelbutton.Text = "cancel";
             this.cancelbutton.UseVisualStyleBackColor = true;
@@ -88,10 +86,9 @@
             // passcekbox
             // 
             this.passcekbox.AutoSize = true;
-            this.passcekbox.Location = new System.Drawing.Point(207, 318);
-            this.passcekbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.passcekbox.Location = new System.Drawing.Point(138, 207);
             this.passcekbox.Name = "passcekbox";
-            this.passcekbox.Size = new System.Drawing.Size(137, 24);
+            this.passcekbox.Size = new System.Drawing.Size(94, 17);
             this.passcekbox.TabIndex = 5;
             this.passcekbox.Text = "See Password";
             this.passcekbox.UseVisualStyleBackColor = true;
@@ -101,10 +98,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 268);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(53, 174);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 25);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Password";
             // 
@@ -112,28 +108,25 @@
             // 
             this.emailtxt.AutoSize = true;
             this.emailtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailtxt.Location = new System.Drawing.Point(82, 191);
-            this.emailtxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.emailtxt.Location = new System.Drawing.Point(55, 124);
             this.emailtxt.Name = "emailtxt";
-            this.emailtxt.Size = new System.Drawing.Size(77, 25);
+            this.emailtxt.Size = new System.Drawing.Size(52, 16);
             this.emailtxt.TabIndex = 3;
             this.emailtxt.Text = "User ID";
             // 
             // passtxtbox
             // 
-            this.passtxtbox.Location = new System.Drawing.Point(207, 265);
-            this.passtxtbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.passtxtbox.Location = new System.Drawing.Point(138, 172);
             this.passtxtbox.Name = "passtxtbox";
-            this.passtxtbox.Size = new System.Drawing.Size(271, 26);
+            this.passtxtbox.Size = new System.Drawing.Size(182, 20);
             this.passtxtbox.TabIndex = 2;
             this.passtxtbox.TextChanged += new System.EventHandler(this.passtxtbox_TextChanged_1);
             // 
             // emailtxtbox
             // 
-            this.emailtxtbox.Location = new System.Drawing.Point(206, 189);
-            this.emailtxtbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.emailtxtbox.Location = new System.Drawing.Point(137, 123);
             this.emailtxtbox.Name = "emailtxtbox";
-            this.emailtxtbox.Size = new System.Drawing.Size(271, 26);
+            this.emailtxtbox.Size = new System.Drawing.Size(182, 20);
             this.emailtxtbox.TabIndex = 1;
             this.emailtxtbox.TextChanged += new System.EventHandler(this.emailtxtbox_TextChanged);
             // 
@@ -144,9 +137,8 @@
             this.loginsubpanel.Controls.Add(this.label2);
             this.loginsubpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.loginsubpanel.Location = new System.Drawing.Point(0, 0);
-            this.loginsubpanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.loginsubpanel.Name = "loginsubpanel";
-            this.loginsubpanel.Size = new System.Drawing.Size(638, 84);
+            this.loginsubpanel.Size = new System.Drawing.Size(425, 55);
             this.loginsubpanel.TabIndex = 0;
             // 
             // label2
@@ -154,10 +146,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.label2.Location = new System.Drawing.Point(206, 15);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(137, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 48);
+            this.label2.Size = new System.Drawing.Size(156, 32);
             this.label2.TabIndex = 4;
             this.label2.Text = "U-LIB LOGIN";
             // 
@@ -165,10 +156,9 @@
             // 
             this.unklabloginpict.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.unklabloginpict.Image = global::U_LIB.Properties.Resources.LOGO_UNIVERSITAS_KLABAT;
-            this.unklabloginpict.Location = new System.Drawing.Point(297, 17);
-            this.unklabloginpict.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.unklabloginpict.Location = new System.Drawing.Point(198, 11);
             this.unklabloginpict.Name = "unklabloginpict";
-            this.unklabloginpict.Size = new System.Drawing.Size(86, 80);
+            this.unklabloginpict.Size = new System.Drawing.Size(58, 53);
             this.unklabloginpict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.unklabloginpict.TabIndex = 1;
             this.unklabloginpict.TabStop = false;
@@ -178,25 +168,24 @@
             this.welcometxt.AutoSize = true;
             this.welcometxt.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcometxt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.welcometxt.Location = new System.Drawing.Point(384, 29);
-            this.welcometxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.welcometxt.Location = new System.Drawing.Point(256, 19);
             this.welcometxt.Name = "welcometxt";
-            this.welcometxt.Size = new System.Drawing.Size(434, 60);
+            this.welcometxt.Size = new System.Drawing.Size(288, 40);
             this.welcometxt.TabIndex = 2;
             this.welcometxt.Text = "WELCOME TO U-LIB";
             this.welcometxt.Click += new System.EventHandler(this.label1_Click);
             // 
             // loginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
-            this.ClientSize = new System.Drawing.Size(1119, 689);
+            this.ClientSize = new System.Drawing.Size(746, 448);
             this.Controls.Add(this.welcometxt);
             this.Controls.Add(this.unklabloginpict);
             this.Controls.Add(this.loginpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "loginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";

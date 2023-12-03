@@ -94,11 +94,7 @@ namespace U_LIB
 
         }
 
-        private void cancelbutton_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.Cancel;
-            this.Close();
-        }
+   
 
         private void passtxtbox_TextChanged_1(object sender, EventArgs e)
         {
@@ -107,12 +103,13 @@ namespace U_LIB
 
         private void cancelbutton_Click_1(object sender, EventArgs e)
         {
-
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
         }
 
         private void loginForm_Load(object sender, EventArgs e)
         {
-
+            passtxtbox.UseSystemPasswordChar = true;
         }
 
         private void passtxtbox_TextChanged(object sender, EventArgs e)

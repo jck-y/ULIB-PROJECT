@@ -101,12 +101,7 @@ namespace U_LIB
 
         private void cancelbtn_Click(object sender, EventArgs e)
         {
-            txt_idbuku.Clear();
-            txt_harga.Clear();
-            txt_judul.Clear();
-            txt_penulis.Clear();
-            txt_stok.Clear();
-            txt_tahun.Clear();
+
         }
 
         private void delbtn_Click(object sender, EventArgs e)
@@ -122,7 +117,6 @@ namespace U_LIB
                 adapter.Fill(ds);
                 koneksi.Close();
 
-                txt_idbuku.Clear();
             }
             catch (Exception ex)
             {
@@ -149,6 +143,52 @@ namespace U_LIB
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void searchbtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                koneksi.Open();
+                query = string.Format("SELECT * FROM buku WHERE id_buku = @idBuku"); 
+                perintah = new MySqlCommand(query, koneksi);
+                perintah.Parameters.AddWithValue("@idBuku", txt_idbuku.Text); 
+                adapter = new MySqlDataAdapter(perintah);
+                ds.Clear();
+                adapter.Fill(ds);
+
+                koneksi.Close();
+
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    foreach (DataRow kolom in ds.Tables[0].Rows)
+                    {
+                        txt_idbuku.Text = kolom["id_buku"].ToString();
+                        txt_judul.Text = kolom["judul_buku"].ToString();
+                        txt_penulis.Text = kolom["penulis_buku"].ToString();
+                        txt_tahun.Text = kolom["thn_terbit"].ToString();
+                        txt_harga.Text = kolom["harga_buku"].ToString();
+                        txt_stok.Text = kolom["stok"].ToString();
+
+                        editbtn.Enabled = true;
+                        delbtn.Enabled = true;
+                    }
+                }
+                else
+                {
+                    // Tidak ada hasil ditemukan, mungkin tampilkan pesan ke pengguna
+                    MessageBox.Show("Buku tidak ditemukan.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void txt_idbuku_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void DataTable_CellContentClick(object sender, DataGridViewCellEventArgs e)

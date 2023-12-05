@@ -279,3 +279,11 @@ C:\Users\Jacky K\Desktop\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.csproj.CoreCompileIn
 C:\Users\Jacky K\Desktop\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.csproj.CopyComplete
 C:\Users\Jacky K\Desktop\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.exe
 C:\Users\Jacky K\Desktop\ULIB-PROJECT\U-LIB\obj\Debug\U-LIB.pdb
+<<<<<<< HEAD
+C:\Users\ASUS TUF\Documents\Semester 5\Visual Progaming\ULIB-PROJECT-main\U-LIB\obj\Debug\U-LIB.csproj.AssemblyReference.cache
+C:\Users\ASUS TUF\Documents\Semester 5\Visual Progaming\ULIB-PROJECT-main\U-LIB\obj\Debug\U-LIB.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS TUF\Documents\Semester 5\Visual Progaming\ULIB-PROJECT-main\U-LIB\obj\Debug\U-LIB.exe.config
+C:\Users\ASUS TUF\Documents\Semester 5\Visual Progaming\ULIB-PROJECT-main\U-LIB\obj\Debug\U-LIB.exe
+C:\Users\ASUS TUF\Documents\Semester 5\Visual Progaming\ULIB-PROJECT-main\U-LIB\obj\Debug\U-LIB.pdb
+=======
+>>>>>>> 149303dc5839665318f330746ec05d02d7d187e7

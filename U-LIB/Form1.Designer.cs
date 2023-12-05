@@ -34,7 +34,6 @@ namespace U_LIB
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.ukLogo = new System.Windows.Forms.PictureBox();
             this.catalogbtn = new System.Windows.Forms.Button();
             this.pnlLogout = new System.Windows.Forms.Panel();
             this.pnlOnBtnLogout = new System.Windows.Forms.Panel();
@@ -49,20 +48,30 @@ namespace U_LIB
             this.pnlTop = new System.Windows.Forms.Panel();
             this.txtuLib = new System.Windows.Forms.Label();
             this.pnlBtnTop = new System.Windows.Forms.Panel();
+            this.ucpanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+            this.ukLogo = new System.Windows.Forms.PictureBox();
+=======
             this.ucpanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+>>>>>>> 149303dc5839665318f330746ec05d02d7d187e7
             this.pnlLeft.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ukLogo)).BeginInit();
             this.pnlLogout.SuspendLayout();
             this.pnlOnBtnAbout.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.pnlBtnTop.SuspendLayout();
             this.ucpanel.SuspendLayout();
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.ukLogo)).BeginInit();
+=======
+>>>>>>> 149303dc5839665318f330746ec05d02d7d187e7
             this.SuspendLayout();
             // 
             // pnlLeft
@@ -103,16 +112,6 @@ namespace U_LIB
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(10, 31);
             this.panel9.TabIndex = 12;
-            // 
-            // ukLogo
-            // 
-            this.ukLogo.Image = global::U_LIB.Properties.Resources.LOGO_UNIVERSITAS_KLABAT;
-            this.ukLogo.Location = new System.Drawing.Point(38, 3);
-            this.ukLogo.Name = "ukLogo";
-            this.ukLogo.Size = new System.Drawing.Size(49, 42);
-            this.ukLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ukLogo.TabIndex = 11;
-            this.ukLogo.TabStop = false;
             // 
             // catalogbtn
             // 
@@ -272,6 +271,38 @@ namespace U_LIB
             this.pnlBtnTop.Size = new System.Drawing.Size(79, 41);
             this.pnlBtnTop.TabIndex = 0;
             // 
+            // ucpanel
+            // 
+            this.ucpanel.Controls.Add(this.label2);
+            this.ucpanel.Controls.Add(this.label1);
+            this.ucpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucpanel.Location = new System.Drawing.Point(133, 43);
+            this.ucpanel.Name = "ucpanel";
+            this.ucpanel.Size = new System.Drawing.Size(562, 327);
+            this.ucpanel.TabIndex = 2;
+            this.ucpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ucpanel_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12.25F);
+            this.label2.Location = new System.Drawing.Point(92, 149);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(372, 23);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Please arrange the borrowing of student books.";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(67, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(427, 74);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "You have successfully logged in!\r\n\r\n";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // btnClose
             // 
             this.btnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose.BackgroundImage")));
@@ -314,8 +345,17 @@ namespace U_LIB
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // ucpanel
+            // ukLogo
             // 
+<<<<<<< HEAD
+            this.ukLogo.Image = global::U_LIB.Properties.Resources.LOGO_UNIVERSITAS_KLABAT;
+            this.ukLogo.Location = new System.Drawing.Point(38, 3);
+            this.ukLogo.Name = "ukLogo";
+            this.ukLogo.Size = new System.Drawing.Size(49, 42);
+            this.ukLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ukLogo.TabIndex = 11;
+            this.ukLogo.TabStop = false;
+=======
             this.ucpanel.Controls.Add(this.label2);
             this.ucpanel.Controls.Add(this.label1);
             this.ucpanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -324,6 +364,7 @@ namespace U_LIB
             this.ucpanel.Size = new System.Drawing.Size(562, 327);
             this.ucpanel.TabIndex = 2;
             this.ucpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ucpanel_Paint);
+>>>>>>> 149303dc5839665318f330746ec05d02d7d187e7
             // 
             // label1
             // 
@@ -361,7 +402,6 @@ namespace U_LIB
             this.Load += new System.EventHandler(this.header_Load);
             this.pnlLeft.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ukLogo)).EndInit();
             this.pnlLogout.ResumeLayout(false);
             this.pnlOnBtnAbout.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);
@@ -369,6 +409,10 @@ namespace U_LIB
             this.pnlBtnTop.ResumeLayout(false);
             this.ucpanel.ResumeLayout(false);
             this.ucpanel.PerformLayout();
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.ukLogo)).EndInit();
+=======
+>>>>>>> 149303dc5839665318f330746ec05d02d7d187e7
             this.ResumeLayout(false);
 
         }
